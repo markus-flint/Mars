@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body class="animate__animated animate__rotateInDownLeft">
+    <header class="header">
+        <div class="container header__inner">
+            <span class="header__logo">
+                Mars
+            </span>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#" class="menu__link">Тарифы</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Фотогалерея</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Задать вопрос</a></li>
+                </ul>
+            </nav>
+            <button class="header__btn">Забронировать</button>
+        </div>
+    </header>
+    <main>
+        <section class="top">
+            <div class="container top__inner">
+                <div class="top__content">
+                    <h1 class="top__title">На <span>Марсе</span> классно</h1>
+                    <p class="top__text">Присоединяйся к команде или собирай свою <br>
+                        и отправляйся в лагерь на Красную планету</p>
+                </div>
+            </div>
+        </section>
+        <section class="forms">
+            <div class="container forms__inner">
+                <div class="forms__content">
+                    <h2 class="forms__title">Выбери дату и забронируй <br> <span>путешествие</span></h2>
+                    <form class="forms__form">
+                        <input type="date" class="forms__input" value="date">
+                        <input type="text" placeholder="Имя" class="forms__input">
+                        <input type="tel" placeholder="Телефон" class="forms__input">
+                        <input type="submit" value="Найти тур" class="forms__btn">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="tarifs container">
+            <h2 class="tarifs__title">Тарифы</h2>
+            <ul class="tarifs__inner">
+                <li class="tarifs__cart">
+                    <h3>Эконом</h3>
+                    <p>Для тех кому важнее <span>куда</span></p>
+                    <p>Вы полетите на много местном шатле</p>
+                    <h3>XXX $</h3>
+                    <div class="tarifs__cart-cirkle"></div>
+                </li>
+                <li class="tarifs__cart">
+                    <h3>Бизнес</h3>
+                    <p>Для тех кому важен <span>комфорт</span></p>
+                    <p>Шатл расчитан на 10 человек</p>
+                    <h3>YYY $</h3>
+                    <div class="tarifs__cart-cirkle"></div>
+                </li>
+                <li class="tarifs__cart">
+                    <h3>VIP</h3>
+                    <p>Для тех кому важно <span>уединение</span></p>
+                    <p>Приватный шатл, где только вы и космос</p>
+                    <h3>XXX $</h3>
+                    <div class="tarifs__cart-cirkle"></div>
+                </li>
+            </ul>
+            <button class="tarifs__btn">Вбрать дату</button>
+        </section>
+        <section class="fotos container">
+            <h2 class="fotos__title">
+                Фотогалерея
+            </h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./img/photo1.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/photo2.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/photo3.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/photo1.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/photo2.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./img/photo3.jpg" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </section>
+        <section>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="video-block">
+            <video class="video" src="/video/racket.mp4" loop autoplay muted></video>
+        </div>
+        <div class="footer-content">
+            <div class="container">
+                <h2 class="footer-title">Остались вопросы?</h2>
+            <p class="footer-subtitle">Напиши нам и мы сможем подобрать <br>
+                оптимальные условия поездки</p>
+                <form class="footer-form">
+                    <input type="text" placeholder="Имя" class="forms__input">
+                    <input type="tel" placeholder="Телефон" class="forms__input">
+                    <input type="submit" value="Найти тур" class="forms__btn">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
